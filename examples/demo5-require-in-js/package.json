@@ -1,0 +1,13 @@
+{
+  "name": "fuck-env-demo5-require-in-js",
+  "config": {
+    "HOST": "127.0.0.1",
+    "PORT": 8000
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "fuck-env": "*"
+  }
+}

@@ -1,0 +1,11 @@
+.DS_Store
+
+.vscode/
+jsconfig.json
+
+.npmrc
+.npmignore
+.travis.yml
+
+examples/
+test/

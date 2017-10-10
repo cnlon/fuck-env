@@ -1,0 +1,14 @@
+{
+  "name": "fuck-env-test-demo",
+  "config": {
+    "HOST": "localhost",
+    "PORT": "80",
+    "INDEX": "/"
+  },
+  "scripts": {
+    "test": "fuck-env node test.js"
+  },
+  "dependencies": {
+    "fuck-env": "*"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "fuck-env",
+  "version": "0.0.0",
+  "description": "Fuck environment variables",
+  "main": "main.js",
+  "bin": {
+    "fuck": "bin/fuck.js",
+    "fuck-env": "bin/fuckEnv.js"
+  },
+  "scripts": {
+    "test": "npm run test:api && npm run test:fuck && npm run test:fuck-env",
+    "test:api": "cd test/api/ && npm test",
+    "test:fuck": "cd test/fuck/ && npm test",
+    "test:fuck-env": "cd test/fuck-env && npm test"
+  },
+  "dependencies": {
+    "cross-spawn": "^5.1.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "cross-env"
+  ],
+  "homepage": "https://github.com/cnlon/fuck-env#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnlon/fuck-env.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cnlon/fuck-env/issues"
+  },
+  "author": "lon",
+  "license": "MIT"
+}

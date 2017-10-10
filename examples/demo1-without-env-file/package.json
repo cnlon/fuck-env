@@ -1,0 +1,13 @@
+{
+  "name": "fuck-env-demo1-without-env-file",
+  "config": {
+    "HOST": "127.0.0.1",
+    "PORT": 8000
+  },
+  "scripts": {
+    "start": "fuck-env PORT=8001 node main.js"
+  },
+  "dependencies": {
+    "fuck-env": "*"
+  }
+}
