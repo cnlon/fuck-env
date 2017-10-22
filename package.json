@@ -1,6 +1,6 @@
 {
   "name": "fuck-env",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Fuck environment variables",
   "main": "main.js",
   "bin": {
