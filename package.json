@@ -8,6 +8,7 @@
     "fuck-env": "bin/fuckEnv.js"
   },
   "scripts": {
+    "pretest": "npm link",
     "test": "npm run test:api && npm run test:fuck && npm run test:fuck-env",
     "test:api": "cd test/api/ && npm test",
     "test:fuck": "cd test/fuck/ && npm test",
