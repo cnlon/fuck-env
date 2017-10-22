@@ -12,10 +12,19 @@
     "test": "npm run test:api && npm run test:fuck && npm run test:fuck-env",
     "test:api": "cd test/api/ && npm test",
     "test:fuck": "cd test/fuck/ && npm test",
-    "test:fuck-env": "cd test/fuck-env && npm test"
+    "test:fuck-env": "cd test/fuck-env && npm test",
+    "lint": "eslint ."
   },
   "dependencies": {
     "cross-spawn": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
   },
   "engines": {
     "node": ">= 6.0.0"

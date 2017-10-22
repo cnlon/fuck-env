@@ -61,11 +61,13 @@ const cmds = {
       }
       const lines = []
       let changed = false
-      for (const [key, value, line] of parse(raw)) {
+      for (const res of parse(raw)) {
+        const key = res[0]
         if (keySet.has(key)) {
           changed = true
           continue
         }
+        const line = res[2]
         lines.push(line)
       }
       if (!changed) {
@@ -139,7 +141,9 @@ function edit (pairs, toAppend) {
 
     const lines = []
     let changed = false
-    for (const [key, value, line] of parse(raw)) {
+    for (const res of parse(raw)) {
+      const key = res[0]
+      const line = res[2]
       if (!key || !map.hasOwnProperty(key)) {
         lines.push(line)
         continue

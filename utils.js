@@ -22,13 +22,13 @@ function getFiles () {
   return FUCK_ENV.split(',').map(file => path.resolve(root, file))
 }
 
-const entries = function* entries (object) {
+const entries = function * entries (object) {
   if (!object) {
     return
   }
   const keys = Object.keys(object)
   let key
-  while (key = keys.shift()) {
+  while ((key = keys.shift())) {
     yield [key, object[key]]
   }
 }
@@ -37,11 +37,11 @@ const entries = function* entries (object) {
  * Parse an env string into an object
  */
 
-function* parse (raw) {
+function * parse (raw) {
   for (const line of raw.split(EOF)) {
     const matched = line.match(ENV_PAIR_RE)
     if (matched === null) {
-      yield [,, line]
+      yield [undefined, undefined, line]
       continue
     }
 
@@ -92,8 +92,6 @@ function prettify (env) {
   list.sort()
   return list.join(EOF)
 }
-
-
 
 
 module.exports = {
