@@ -5,7 +5,10 @@ jsconfig.json
 
 .npmrc
 .npmignore
+package-lock.json*
+
 .travis.yml
+.eslintrc
 
 examples/
 test/
