@@ -42,7 +42,11 @@ function proxy (value) {
   if (!value.startsWith('$npm_package_') && !value.startsWith('$npm_config_')) {
     return value
   }
-  return process.env[value.slice(1)]
+  const key = value.slice(1)
+  if (!process.env.hasOwnProperty(key)) {
+    return value
+  }
+  return process.env[key]
 }
 
 
