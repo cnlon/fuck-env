@@ -1,8 +1,5 @@
 {
   "name": "fuck-env-demo4-with-default-env-file",
-  "config": {
-    "FUCK_ENV": ".env,default.env"
-  },
   "scripts": {
     "start": "fuck-env node main.js"
   },
