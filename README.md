@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/cnlon/fuck-env.svg?branch=master)](https://travis-ci.org/cnlon/fuck-env)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
-fuck-env 用于跨平台设置和聚合环境变量，支持 [.env 类型文件](https://github.com/motdotla/dotenv)和 [package.json 的 config 字段](https://docs.npmjs.com/files/package.json#config)。
+fuck-env 用于跨平台设置脚本环境变量，支持 [.env 类型文件](https://github.com/motdotla/dotenv)和 [package.json 的 config 字段](https://docs.npmjs.com/files/package.json#config)。
 
 ## 安装
 
