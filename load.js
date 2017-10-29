@@ -26,15 +26,23 @@ function load (...files) {
       ? entries(raw.config)
       : parse(raw)
     for (let [key, value] of envEntries) {
-      if (key && !result.hasOwnProperty(key)) {
-        if (value.startsWith('$npm_package_') || value.startsWith('$npm_config_')) {
-          value = process.env[value.slice(1)] || ''
-        }
-        result[key] = value
+      if (!key || result.hasOwnProperty(key)) {
+        continue
       }
+      result[key] = proxy(value)
     }
   }
   return result
+}
+
+function proxy (value) {
+  if (typeof value !== 'string') {
+    return value
+  }
+  if (!value.startsWith('$npm_package_') && !value.startsWith('$npm_config_')) {
+    return value
+  }
+  return process.env[value.slice(1)]
 }
 
 
