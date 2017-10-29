@@ -1,7 +1,11 @@
 require('../../')
 
-const {HOST, PORT, INDEX} = process.env
-if (HOST === 'localhost' && PORT === '8000' && INDEX === '/') {
+const {NAME, HOST, PORT, INDEX} = process.env
+if (NAME === 'api-test-demo'
+  && HOST === 'localhost'
+  && PORT === '8000'
+  && INDEX === '/'
+) {
   console.log('✅ api: test passed!')
   process.exit(0)
 }

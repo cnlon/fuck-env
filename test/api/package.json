@@ -1,6 +1,7 @@
 {
   "name": "api-test-demo",
   "config": {
+    "NAME": "$npm_package_name",
     "HOST": "localhost",
     "PORT": "80",
     "INDEX": "/"

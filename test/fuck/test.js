@@ -36,7 +36,7 @@ for (const {cmd, output} of toTest) {
 }
 
 if (pass) {
-  console.log('✅ fuck: test passed')
+  console.log('✅ fuck: test passed!')
   process.exit(0)
 } else {
   console.error('❌ fuck: test failed!')
