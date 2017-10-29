@@ -25,8 +25,11 @@ function load (...files) {
     const envEntries = isPackage
       ? entries(raw.config)
       : parse(raw)
-    for (const [key, value] of envEntries) {
+    for (let [key, value] of envEntries) {
       if (key && !result.hasOwnProperty(key)) {
+        if (value.startsWith('$npm_package_') || value.startsWith('$npm_config_')) {
+          value = process.env[value.slice(1)] || ''
+        }
         result[key] = value
       }
     }
