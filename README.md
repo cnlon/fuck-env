@@ -52,6 +52,7 @@ console.log(`https://github.com/${USER}/${REPO}`)
 - [自定义 .env 文件路径](https://github.com/cnlon/fuck-env/tree/master/examples/demo3-with-custom-env-file)
 - [使用默认 .env 文件](https://github.com/cnlon/fuck-env/tree/master/examples/demo4-with-default-env-file)
 - [在 js 文件中使用 fuck-env](https://github.com/cnlon/fuck-env/tree/master/examples/demo5-require-in-js)
+- [代理 NPM 环境变量](https://github.com/cnlon/fuck-env/tree/master/examples/demo6-proxy-npm_env)（`$npm_package_*` 或 `$npm_config_*`）
 
 ---
 
