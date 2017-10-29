@@ -1,0 +1,12 @@
+{
+  "name": "fuck-env-demo6-proxy-npm_package_config",
+  "config": {
+    "APP_NAME": "$npm_package_name"
+  },
+  "scripts": {
+    "start": "fuck-env node main.js"
+  },
+  "dependencies": {
+    "fuck-env": "*"
+  }
+}
