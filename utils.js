@@ -3,7 +3,7 @@ const path = require('path')
 
 
 const root = process.cwd()
-const FUCK_ENV_DEFAULT = '.env,package.json'
+const FUCK_ENV_DEFAULT = '.env,default.env,package.json'
 const EOF = '\n'
 const ENV_VALUE_RE = /^(\s*[$\w]+\s*=\s*)(.*)?(\s*)$/
 const ENV_PAIR_RE = /^\s*([$\w]+)\s*=\s*(.*)?\s*$/
