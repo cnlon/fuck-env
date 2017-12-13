@@ -7,6 +7,10 @@
 
 fuck-env 用于跨平台设置和持久化脚本环境变量，支持 .env 类型文件和 [package.json 的 config 字段](https://docs.npmjs.com/files/package.json#config)。
 
+**为什么创建 fuck-env？**
+
+请见：[如何更好的管理前端环境变量](https://lon.im/post/use-environment-variables-better-in-front_end.html)
+
 ## 安装
 
 ```bash
@@ -53,10 +57,6 @@ console.log(`https://github.com/${USER}/${REPO}`)
 - [使用默认 .env 文件](https://github.com/cnlon/fuck-env/tree/master/examples/demo4-with-default-env-file)
 - [在 js 文件中使用 fuck-env](https://github.com/cnlon/fuck-env/tree/master/examples/demo5-require-in-js)
 - [代理 NPM 环境变量](https://github.com/cnlon/fuck-env/tree/master/examples/demo6-proxy-npm_env)（`$npm_package_*` 或 `$npm_config_*`）
-
-## 为什么创建 fuck-env？
-
-请见：[如何更好的管理前端环境变量](https://lon.im/post/use-environment-variables-better-in-front_end.html)
 
 ---
 
