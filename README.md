@@ -47,7 +47,7 @@ const {USER, REPO} = process.env
 console.log(`https://github.com/${USER}/${REPO}`)
 ```
 
-执行 `npm start` 后，输出 `https://github.com/cnlon/fuck-env`，不论是在 Windows 还是 POSIX（macOS、Linux 等）系统中。
+执行 `npm start` 后，输出 `https://github.com/cnlon/fuck-env`，不论是在 Windows 还是 POSIX（macOS、Linux 等）系统中都可以正常工作。
 
 ## [更多示例](https://github.com/cnlon/fuck-env/tree/master/examples/)
 
